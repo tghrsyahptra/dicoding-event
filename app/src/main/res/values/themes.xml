@@ -1,0 +1,23 @@
+<resources>
+    <!-- Tema aplikasi saat dalam mode gelap -->
+    <!-- Base application theme untuk Light Mode -->
+    <style name="Base.Theme.DicodingEventApp.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:textColor">@color/text_color</item>
+
+    </style>
+
+    <style name="Theme.DicodingEventApp" parent="Base.Theme.DicodingEventApp.Light" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background_dark</item>
+        <item name="postSplashScreenTheme">@style/Theme.DicodingEventApp</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_dicoding</item>
+    </style>
+</resources>

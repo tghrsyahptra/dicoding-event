@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme untuk Dark Mode -->
+    <style name="Base.Theme.DicodingEventApp.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Background abu-abu gelap dan status bar hitam -->
+        <item name="android:windowBackground">@color/dark_grey</item>
+        <item name="android:statusBarColor">@color/black</item>
+
+        <!-- Warna Utama dan Sekunder -->
+        <item name="colorPrimary">@color/dark_grey</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Warna teks menjadi putih -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Tema utama yang digunakan saat dark mode -->
+    <style name="Theme.DicodingEventApp" parent="Base.Theme.DicodingEventApp.Dark" />
+</resources>

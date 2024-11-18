@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/android:windowBackground">
+
+    <!-- Toolbar atau AppBar untuk Settings -->
+    <Preference
+        android:layout="@layout/appbar_settings"
+        android:selectable="false"
+        android:background="?attr/android:windowBackground"
+        android:title="Settings" />
+
+    <!-- SwitchPreference untuk Tema Gelap -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_dark_mode"
+        android:key="theme"
+        android:summary="Enable dark mode"
+        android:background="@color/black"
+        android:title="Dark Mode" />
+
+    <!-- SwitchPreference untuk Pengingat Harian -->
+    <SwitchPreference
+        android:defaultValue="false"
+        android:icon="@drawable/ic_notifications"
+        android:key="notification"
+        android:summary="Enable notification"
+        android:background="?attr/android:windowBackground"
+        android:title="Daily Reminder" />
+
+</PreferenceScreen>
